@@ -12,7 +12,7 @@
    <img src="./src/assets/preview-4.png" width="48%" alt="Main Loader" />
 </p>
 
-🔗 [Live Demo](https://forms-validation.onrender.com)
+🔗 [Live Demo](https://form-validation-mfpe.onrender.com)
 
 ### 📝 Project Features
 
@@ -138,34 +138,28 @@ Open a terminal and run the command:
 #### 1. Cloning a repository
 
 ```bash
-git clone [https://github.com/AlexandraKurylo/React-labs.git](https://github.com/AlexandraKurylo/React-labs.git)
+git clone [https://github.com/AlexandraKurylo/form-validation.git](https://github.com/AlexandraKurylo/form-validation.git)
 ```
 
-#### 2. Go to the project directory
-
-```bash
-   cd React-labs/Lab-5
-```
-
-#### 3. Installing dependencies
+#### 2. Installing dependencies
 
 ```bash
    npm install
 ```
 
-#### 4. Starting the database (Terminal 1)
+#### 3. Starting the database (Terminal 1)
 
 ```bash
    npm run server
 ```
 
-#### 5. Launching the application (Terminal 2)
+#### 4. Launching the application (Terminal 2)
 
 ```bash
    npm run dev
 ```
 
-#### 6. You can run the database and application with one command in one terminal
+#### 5. You can run the database and application with one command in one terminal
 
 ```bash
    npm run start:app

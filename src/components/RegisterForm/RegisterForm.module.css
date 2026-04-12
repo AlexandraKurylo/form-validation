@@ -1,0 +1,96 @@
+.formCard {
+  background-color: var(--card-bg-color);
+  padding: 2.5rem; 
+  border-radius: 1rem; 
+  box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 43.75rem;
+  margin: 0 auto; 
+  border: 1px solid var(--gray-300);
+}
+
+.title {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.fieldGroup {
+  margin-bottom: 1.5rem; 
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--gray-100);
+}
+
+.input {
+  width: 100%;
+  padding: 0.85rem; 
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--gray-300);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-color);
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--btn-text-color);
+  box-shadow: 0 0 0 0.1875rem rgba(87, 196, 220, 0.1);
+}
+
+.inputError {
+  border-color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.05);
+}
+
+.errorMessage {
+  color: #ef4444;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  display: block;
+  font-weight: 500;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  border: 1px solid var(--btn-text-color);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: linear-gradient(90deg,rgba(69, 65, 87, 1) 0%, rgba(36, 36, 82, 1) 35%, rgba(96, 96, 156, 1) 100%);
+}
+
+.submitButton:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.submitButton:disabled {
+  background-color: var(--gray-300);
+  border-color: var(--gray-100);
+  color: var(--gray-100);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .formCard {
+    padding: 3rem;       
+  }
+}

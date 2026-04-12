@@ -1,0 +1,1 @@
+export { UserProfileFormPage } from "./UserProfileFormPage";

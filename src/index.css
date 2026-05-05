@@ -42,7 +42,7 @@ body {
   background-color: var(--main-bg-color);
 }
 
-body[data-theme='dark'] {
+.darkLayout {
   --main-bg-color: #23272F;
   --text-color: #fff;
 

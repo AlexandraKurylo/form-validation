@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import ReactLogo from "../../assets/react.svg";
 import cls from "./Header.module.css";
-import { ThemeSwitcher } from "../ThemeSwitcher";
 import { Button } from "../Button";
+import { ThemeToggler } from "../../features/ThemeToggler";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ export const Header = () => {
         <Button to="/register">Task 1</Button>
         <Button to="/result">Validation result</Button>
       </div>
-      <ThemeSwitcher />
+      <ThemeToggler />
     </header>
   );
 };

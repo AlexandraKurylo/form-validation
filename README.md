@@ -34,7 +34,7 @@
 
 - Backend (Mock): JSON Server (REST API simulation)
 
-- Routing: React Router v6.4 (Dynamic routing)
+- Routing: React Router v6.4+ (Dynamic routing)
 
 - Forms & Validation: React Hook Form, Zod
 
@@ -97,7 +97,7 @@ src/
 │   └── ...
 ├── components/               # Reusable UI components
 │   ├── Button/               # Generic button component
-│   ├── DataCard/             # Dashboard card (Generic CRUD component)
+│   ├── DataCard/             # Dashboard card
 │   ├── Header/               # Site navigation and theme toggle
 │   ├── Loader/               # Animated loading spinner/text
 │   ├── MainLayout/           # Shared page wrapper
@@ -107,7 +107,6 @@ src/
 │   │   ├── registerSchema.ts
 │   │   └── index.ts
 │   ├── TaskCard/             # Component for task display
-│   ├── ThemeSwitcher/        # Dark/Light mode toggle
 │   └── UserProfileForm/      # Profile management logic & schema
 │       ├── UserProfileForm.tsx
 │       ├── UserProfileForm.module.css
@@ -115,17 +114,26 @@ src/
 │       └── index.ts
 ├── constants/                # Global configuration strings
 │   └── global.constants.ts   # API_URL
+├── features/                 # Complex functional modules
+│ └── ThemeToggler/           # Theme switching logic & UI
 ├── helpers/                  # Pure utility functions
 │   └── delayFn.ts            # Custom delay for loader simulation
 ├── hooks/                    # Custom React hooks
-│   ├── useFetch.ts           # Centralized API handling (Loading/Error)
-│   └── useDelayedLoader.ts   # Hook for artificial page delays
+│   ├── useAuth.ts
+│   ├── useFetch.ts
+│   └── useTheme.ts
 ├── pages/                    # Top-level route components
 │   ├── HomePage/             # Portfolio/Intro page
 │   ├── NotFoundPage/         # 404 Error handling
 │   ├── RegisterFormPage/     # Registration route
 │   ├── UserProfileFormPage/  # Profile route
 │   └── ValidationResultPage/ # CRUD Dashboard (Database results)
+├── theme/                    # Styling configuration & provider
+│ ├── index.ts
+│ └── ThemeProvider.tsx
+├── types/                    # Global TypeScript definitions
+│ ├── global.enums.ts
+│ └── global.types.ts
 ├── App.tsx                   # Routing
 ├── index.css                 # Global resets & variable definitions
 └── main.tsx                  # Application entry point

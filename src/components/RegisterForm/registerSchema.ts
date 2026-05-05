@@ -21,5 +21,4 @@ export const registerSchema = z
     }
   });
 
-// Важливо: переконайтеся, що тип виглядає саме так
 export type RegisterFormData = z.infer<typeof registerSchema>;
